@@ -2,26 +2,77 @@
 <html lang="id">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Link Maker — Felicia & Kresna</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Pembuat Tautan Undangan — Felicia & Kresna</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet" />
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&family=Playfair+Display:ital,wght@0,500;1,500&display=swap');
-    :root{--paper:#faf9f4;--ink:#283227;--moss:#425a43;--gold:#a98d5f;--line:#d8d9cb}*{box-sizing:border-box}body{margin:0;background:#e3e5db;color:var(--ink);font:16px/1.55 'DM Sans',sans-serif}.wrap{width:min(100%,680px);min-height:100dvh;margin:auto;padding:42px 22px 58px;background:var(--paper)}.eyebrow{margin:0;color:var(--moss);font-size:.65rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase}h1,h2{font-family:'Playfair Display',Georgia,serif;font-weight:500;letter-spacing:-.04em}h1{margin:8px 0 11px;font-size:clamp(2.3rem,10vw,3.6rem);line-height:1}h1 i{font-style:italic}.intro{margin:0;color:#656c5f;font-size:.92rem}.card{margin-top:24px;padding:21px 18px;border:1px solid var(--line);background:#fffefa}.card h2{margin:0;font-size:1.42rem}.card p{margin:5px 0 15px;color:#697063;font-size:.82rem}label{display:block;margin:13px 0 7px;color:var(--moss);font-size:.67rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase}input,textarea{width:100%;min-height:50px;padding:13px;border:1px solid var(--line);background:#fffefa;font:inherit;font-size:16px}textarea{min-height:150px;resize:vertical}button{min-height:50px;border:0;cursor:pointer;font:700 .7rem 'DM Sans',sans-serif;letter-spacing:.12em;text-transform:uppercase}.primary{width:100%;margin-top:14px;color:#fff;background:var(--moss)}.result{margin-top:18px;padding:16px;border-left:2px solid var(--gold);background:#eff0e8}.result b{font-family:'Playfair Display',Georgia,serif;font-size:1.1rem}.result code{display:block;overflow:auto;margin:8px 0 13px;color:#465746;font-size:.72rem;white-space:nowrap}.copy{min-height:39px;padding:0 13px;border:1px solid #aeb5a4;color:#4e5848;background:transparent;font-size:.62rem}.empty{margin-top:20px;padding:18px;background:#eff0e8;color:#687064;text-align:center;font-size:.84rem}.toast{position:fixed;right:20px;bottom:20px;left:20px;max-width:620px;margin:auto;padding:12px;color:#fff;background:var(--moss);text-align:center;font-size:.8rem;opacity:0;transform:translateY(10px);transition:.2s}.toast.show{opacity:1;transform:none}
-    :root{--gold:#B19665;--champagne:#C5B185;--sage:#CBCAB5;--cream:#F1EFE6;--white:#FDFDFD;--ink:#4A4338;--muted:#746D5E;--deep:#62543D;--line:#D8CFBD}*{box-sizing:border-box}body{margin:0;background:var(--sage);color:var(--ink);font:16px/1.55 'DM Sans',sans-serif}.wrap{width:min(100%,680px);min-height:100dvh;margin:auto;padding:42px 22px 58px;background:var(--cream)}.eyebrow{margin:0;color:var(--deep);font-size:.65rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase}h1,h2{font-family:'Playfair Display',Georgia,serif;font-weight:500;letter-spacing:-.04em}h1{margin:8px 0 11px;color:var(--deep);font-size:clamp(2.3rem,10vw,3.6rem);line-height:1}h1 i{font-style:italic;color:var(--gold)}.intro{margin:0;color:var(--muted);font-size:.92rem}.card{margin-top:24px;padding:21px 18px;border:1px solid var(--champagne);background:var(--white)}.card h2{margin:0;color:var(--deep);font-size:1.42rem}.card p{margin:5px 0 15px;color:var(--muted);font-size:.82rem}label{display:block;margin:13px 0 7px;color:var(--deep);font-size:.67rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase}input,textarea{width:100%;min-height:50px;padding:13px;border:1px solid var(--champagne);background:var(--white);color:var(--ink);font:inherit;font-size:16px}textarea{min-height:150px;resize:vertical}button{min-height:50px;border:0;cursor:pointer;font:700 .7rem 'DM Sans',sans-serif;letter-spacing:.12em;text-transform:uppercase}.primary{width:100%;margin-top:14px;color:var(--white);background:var(--deep);box-shadow:0 4px 0 var(--gold)}.result{margin-top:18px;padding:16px;border-left:2px solid var(--gold);background:var(--sage)}.result b{font-family:'Playfair Display',Georgia,serif;font-size:1.1rem;color:var(--deep)}.result code{display:block;overflow:auto;margin:8px 0 13px;color:var(--deep);font-size:.72rem;white-space:nowrap}.copy{min-height:39px;padding:0 13px;border:1px solid var(--gold);color:var(--deep);background:transparent;font-size:.62rem}.empty{margin-top:20px;padding:18px;background:var(--sage);color:var(--muted);text-align:center;font-size:.84rem}.toast{position:fixed;right:20px;bottom:20px;left:20px;max-width:620px;margin:auto;padding:12px;color:var(--white);background:var(--deep);text-align:center;font-size:.8rem;opacity:0;transform:translateY(10px);transition:.2s}.toast.show{opacity:1;transform:none}
+    :root{--paper:#f1efe6;--ink:#4a4338;--deep:#62543d;--gold:#b19665;--line:#d8cfbd;--white:#fdfdfd;--sage:#cbcab5}
+    *{box-sizing:border-box}body{margin:0;color:var(--ink);background:#cbcab5;font:400 16px/1.55 "DM Sans",sans-serif}.wrap{width:min(100%,650px);min-height:100svh;margin:auto;padding:34px 20px 54px;background:var(--paper)}
+    .eyebrow{margin:0;color:var(--deep);font-size:.65rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase}h1,h2{font-family:"Playfair Display",Georgia,serif;font-weight:500;letter-spacing:-.035em}h1{margin:8px 0 12px;color:var(--deep);font-size:clamp(2.25rem,9vw,3.3rem);line-height:1.02}h1 i{color:var(--gold)}h2{margin:0;font-size:1.42rem}.intro{max-width:34rem;margin:0;color:#746d5e;font-size:.9rem}.local{margin:23px 0 0;padding:12px 14px;border-left:2px solid var(--gold);background:#e6e2d4;color:#625d51;font-size:.78rem}
+    .card{margin-top:24px;padding:22px 18px;border:1px solid var(--line);background:var(--white)}.card-intro{margin:5px 0 17px;color:#746d5e;font-size:.82rem}label{display:block;margin:14px 0 7px;color:var(--deep);font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase}input,textarea{display:block;width:100%;padding:13px;border:1px solid var(--line);border-radius:0;outline:0;background:var(--white);color:var(--ink);font:inherit;font-size:16px}input{min-height:50px}textarea{min-height:150px;resize:vertical}input:focus,textarea:focus{border-color:var(--gold);box-shadow:0 0 0 3px #cbcab566}
+    button{min-height:50px;border:0;cursor:pointer;font:700 .7rem "DM Sans",sans-serif;letter-spacing:.12em;text-transform:uppercase}.primary{width:100%;margin-top:14px;color:var(--white);background:var(--deep);box-shadow:0 4px 0 var(--gold)}.hint{margin:13px 0 0;color:#746d5e;font-size:.78rem}.results{display:grid;gap:10px;margin-top:21px}.result{padding:14px;border-left:2px solid var(--gold);background:#e6e2d4}.result strong{display:block;color:var(--deep);font:500 1.05rem/1.2 "Playfair Display",Georgia,serif}.result code{display:block;overflow:auto;margin:7px 0 12px;color:var(--deep);font:400 .7rem/1.45 ui-monospace,SFMono-Regular,Menlo,monospace;white-space:nowrap}.copy{min-height:38px;padding:0 12px;color:var(--deep);border:1px solid var(--gold);background:transparent;font-size:.62rem}.empty{padding:18px;background:#e6e2d4;color:#746d5e;text-align:center;font-size:.84rem}.toast{position:fixed;right:20px;bottom:20px;left:20px;max-width:610px;margin:auto;padding:12px;color:var(--white);background:var(--deep);text-align:center;font-size:.8rem;opacity:0;transform:translateY(10px);transition:.2s;pointer-events:none}.toast.show{opacity:1;transform:none}@media(min-width:700px){.wrap{padding:58px 50px}.card{padding:28px}}
   </style>
 </head>
 <body>
   <main class="wrap">
-    <p class="eyebrow">Alat lokal · Felicia & Kresna</p><h1>Pembuat tautan<br><i>undangan tamu</i></h1><p class="intro">Masukkan daftar nama tamu, lalu salin tautan personal untuk setiap penerima. Halaman ini terpisah dari undangan utama.</p>
-    <section class="card"><h2>Alamat undangan</h2><p>URL ini digunakan secara otomatis untuk setiap tautan undangan.</p><label for="base">URL undangan publik</label><input id="base" type="url" value="http://feliciakresna.teawool.my.id/" autocomplete="off"></section>
-    <section class="card"><h2>Daftar tamu</h2><p>Tulis satu nama per baris. Jumlah nama tidak dibatasi.</p><label for="names">Nama tamu</label><textarea id="names" placeholder="Bapak Pranatha Widya&#10;Ibu Maya &amp; Keluarga&#10;Sahabat SMA"></textarea><button class="primary" id="make" type="button">Buat tautan undangan</button></section>
-    <section id="results" aria-live="polite"><div class="empty">Belum ada tautan yang dibuat.</div></section>
-  </main><div class="toast" id="toast" role="status"></div>
+    <p class="eyebrow">Alat lokal · Felicia & Kresna</p>
+    <h1>Pembuat tautan<br /><i>undangan tamu</i></h1>
+    <p class="intro">Buat tautan personal agar nama tamu langsung terisi di undangan dan formulir konfirmasi kehadiran.</p>
+    <p class="local">Halaman ini hanya digunakan di perangkat Anda. Tautan yang dibuat akan membuka undangan Felicia & Kresna.</p>
+    <section class="card">
+      <h2>Alamat undangan</h2><p class="card-intro">Alamat ini diingat di browser perangkat ini.</p>
+      <label for="baseUrl">URL undangan publik</label>
+      <input id="baseUrl" type="url" inputmode="url" autocomplete="url" value="http://feliciakresna.teawool.my.id/" />
+    </section>
+    <section class="card">
+      <h2>Daftar tamu</h2><p class="card-intro">Tulis satu nama per baris. Setiap nama akan mendapat satu tautan.</p>
+      <label for="names">Nama tamu</label>
+      <textarea id="names" autocomplete="off" placeholder="Bapak Pranatha Widya&#10;Ibu Maya &amp; Keluarga&#10;Sahabat SMA"></textarea>
+      <label for="guestQuota">Kuota orang per undangan</label>
+      <input id="guestQuota" type="number" inputmode="numeric" min="1" max="20" step="1" value="1" />
+      <button class="primary" id="generate" type="button">Buat tautan undangan</button>
+      <p class="hint">Kuota berlaku untuk setiap tautan pada daftar. Tamu memilih jumlah yang hadir saat mengisi konfirmasi kehadiran.</p>
+    </section>
+    <section class="card">
+      <h2>Satu tautan untuk keluarga</h2><p class="card-intro">Nama penerima tampil di cover. Anggota keluarga dapat mengonfirmasi kehadiran satu per satu.</p>
+      <label for="familyTo">Nama penerima utama</label>
+      <input id="familyTo" autocomplete="off" placeholder="Contoh: Keluarga Bapak Arman Setiawan" />
+      <label for="familyNames">Anggota keluarga (satu nama per baris)</label>
+      <textarea id="familyNames" autocomplete="off" placeholder="Bapak Arman Setiawan&#10;Ibu Lestari Setiawan&#10;Naya Setiawan"></textarea>
+      <button class="primary" id="generateFamily" type="button">Buat satu tautan keluarga</button>
+    </section>
+    <section class="results" id="results" aria-live="polite"><div class="empty">Belum ada tautan yang dibuat.</div></section>
+  </main>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
   <script>
-    const base=document.querySelector('#base'),names=document.querySelector('#names'),results=document.querySelector('#results'),toast=document.querySelector('#toast');let timer;
-    const esc=s=>s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));
-    function note(s){toast.textContent=s;toast.classList.add('show');clearTimeout(timer);timer=setTimeout(()=>toast.classList.remove('show'),1800)}
-    document.querySelector('#make').onclick=()=>{let url=base.value.trim();if(!/^https?:\/\//i.test(url))url='https://'+url;try{url=new URL(url);url.search='';url.hash=''}catch{return note('Masukkan URL undangan yang valid.')};const people=[...new Set(names.value.split('\n').map(x=>x.trim()).filter(Boolean))];if(!people.length)return note('Tulis setidaknya satu nama tamu.');results.innerHTML=people.map(name=>{const link=`${url.href.replace(/\/$/,'')}?to=${encodeURIComponent(name)}`;return `<article class="result"><b>${esc(name)}</b><code>${link}</code><button class="copy" type="button" data-link="${link}">Salin tautan</button></article>`}).join('');document.querySelectorAll('.copy').forEach(button=>button.onclick=async()=>{try{await navigator.clipboard.writeText(button.dataset.link);note('Tautan berhasil disalin.')}catch{prompt('Salin tautan ini:',button.dataset.link)}})};
+    const baseInput=document.getElementById('baseUrl'),namesInput=document.getElementById('names'),guestQuota=document.getElementById('guestQuota'),familyTo=document.getElementById('familyTo'),familyNames=document.getElementById('familyNames'),results=document.getElementById('results'),toast=document.getElementById('toast');
+    let timer;
+    const savedBaseUrl=localStorage.getItem('kresna-feli-public-url');
+    if(savedBaseUrl)baseInput.value=savedBaseUrl;
+    const escapeHTML=text=>text.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));
+    function notify(message){toast.textContent=message;toast.classList.add('show');clearTimeout(timer);timer=setTimeout(()=>toast.classList.remove('show'),2200)}
+    function getBaseUrl(){let value=baseInput.value.trim();if(!value)return null;if(!/^https?:\/\//i.test(value))value=`https://${value}`;try{const url=new URL(value);url.search='';url.hash='';return url.href}catch{return null}}
+    function showLinks(entries){results.innerHTML=entries.map(({name,link})=>`<article class="result"><strong>${escapeHTML(name)}</strong><code>${escapeHTML(link)}</code><button class="copy" type="button" data-link="${encodeURIComponent(link)}">Salin tautan</button></article>`).join('');results.querySelectorAll('.copy').forEach(button=>button.addEventListener('click',()=>copyLink(button)))}
+    async function copyLink(button){const link=decodeURIComponent(button.dataset.link);try{await navigator.clipboard.writeText(link);notify('Tautan berhasil disalin.')}catch{prompt('Salin tautan ini:',link)}}
+    document.getElementById('generate').addEventListener('click',()=>{
+      const base=getBaseUrl();
+      if(!base){notify('Masukkan alamat undangan yang valid.');baseInput.focus();return}
+      const quota=Number(guestQuota.value);
+      if(!Number.isInteger(quota)||quota<1||quota>20){notify('Isi kuota antara 1 dan 20 orang.');guestQuota.focus();return}
+      localStorage.setItem('kresna-feli-public-url',base);
+      const people=[...new Set(namesInput.value.split('\n').map(name=>name.trim()).filter(Boolean))];
+      if(!people.length){results.innerHTML='<div class="empty">Tulis setidaknya satu nama tamu terlebih dahulu.</div>';namesInput.focus();return}
+      showLinks(people.map(name=>{const url=new URL(base);url.searchParams.set('to',name);url.searchParams.set('quota',String(quota));return{name,link:url.href}}));
+    });
+    document.getElementById('generateFamily').addEventListener('click',()=>{
+      const base=getBaseUrl(),recipient=familyTo.value.trim(),members=[...new Set(familyNames.value.split('\n').map(name=>name.trim()).filter(Boolean))];
+      if(!base){notify('Masukkan alamat undangan yang valid.');baseInput.focus();return}
+      if(!recipient||!members.length){results.innerHTML='<div class="empty">Isi nama penerima utama dan setidaknya satu anggota keluarga.</div>';return}
+      localStorage.setItem('kresna-feli-public-url',base);
+      showLinks([{name:recipient,link:`${base}?to=${encodeURIComponent(recipient)}&family=${encodeURIComponent(members.join('|'))}`}]);
+    });
   </script>
 </body>
 </html>
