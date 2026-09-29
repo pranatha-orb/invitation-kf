@@ -24,7 +24,7 @@
     <section class="card">
       <h2>Alamat undangan</h2><p class="card-intro">Alamat ini diingat di browser perangkat ini.</p>
       <label for="baseUrl">URL undangan publik</label>
-      <input id="baseUrl" type="url" inputmode="url" autocomplete="url" value="http://feliciakresna.teawool.my.id/" />
+      <input id="baseUrl" type="url" inputmode="url" autocomplete="url" value="https://feliciakresna.teawool.my.id/" />
     </section>
     <section class="card">
       <h2>Daftar tamu</h2><p class="card-intro">Tulis satu nama per baris. Setiap nama akan mendapat satu tautan.</p>
@@ -50,7 +50,7 @@
     const baseInput=document.getElementById('baseUrl'),namesInput=document.getElementById('names'),guestQuota=document.getElementById('guestQuota'),familyTo=document.getElementById('familyTo'),familyNames=document.getElementById('familyNames'),results=document.getElementById('results'),toast=document.getElementById('toast');
     let timer;
     const savedBaseUrl=localStorage.getItem('kresna-feli-public-url');
-    if(savedBaseUrl)baseInput.value=savedBaseUrl;
+    if(savedBaseUrl&&savedBaseUrl!=='http://feliciakresna.teawool.my.id/')baseInput.value=savedBaseUrl;
     const escapeHTML=text=>text.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));
     function notify(message){toast.textContent=message;toast.classList.add('show');clearTimeout(timer);timer=setTimeout(()=>toast.classList.remove('show'),2200)}
     function getBaseUrl(){let value=baseInput.value.trim();if(!value)return null;if(!/^https?:\/\//i.test(value))value=`https://${value}`;try{const url=new URL(value);url.search='';url.hash='';return url.href}catch{return null}}
